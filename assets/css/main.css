@@ -857,94 +857,6 @@ section {
 .call-to-action .cta-btn:hover {
   background: var(--color-primary);
 }
-
-/*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
-.features {
-  padding-bottom: 0;
-}
-
-.features h3 {
-  color: var(--color-secondary);
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.features .icon-list i {
-  margin-right: 10px;
-  font-size: 24px;
-  line-height: 1.2;
-}
-
-.features .icon-list span {
-  font-size: 18px;
-  color: #29486a;
-}
-
-.features .phone-wrap {
-  position: absolute;
-  right: 0;
-}
-
-@media (max-width: 768px) {
-  .features .phone-wrap {
-    position: relative;
-  }
-}
-
-.features .phone-wrap img {
-  width: 340px;
-}
-
-@media (max-width: 992px) {
-  .features .phone-wrap img {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .features .phone-wrap img {
-    width: 100%;
-  }
-}
-
-.features .details {
-  margin-top: 80px;
-  padding: 120px 0;
-  background-color: #f7f9fc;
-}
-
-.features .details h4 {
-  color: var(--color-secondary);
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.features .details p {
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.features .details .btn-get-started {
-  font-family: var(--font-primary);
-  display: inline-block;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding: 10px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.features .details .btn-get-started:hover {
-  background: #2aa5df;
-}
-
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
@@ -1143,97 +1055,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(27, 47, 69, 0.1);
-  background: #fff;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #e8eff6;
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
-
-@media (max-width: 1199px) {
-  .testimonials .swiper-slide-active {
-    opacity: 1;
-  }
-
-  .testimonials .swiper-pagination {
-    margin-top: 0;
-  }
-
-  .testimonials .testimonial-item {
-    margin: 40px 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonials .swiper-slide-next {
-    opacity: 1;
-    transform: scale(1.12);
-  }
-}
-
-/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-flters {
@@ -1398,7 +1219,7 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background: url("../img/contact-bg.png") left top no-repeat;
+  background: url("../img/contact_bck.png") left top no-repeat;
   background-size: contain;
   position: relative;
 }
@@ -1506,6 +1327,7 @@ section {
   box-shadow: none;
   font-size: 14px;
   padding: 12px 15px;
+  resize: none;
 }
 
 .contact .php-email-form input:focus,
