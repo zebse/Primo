@@ -2094,3 +2094,8 @@ section {
   font-size: .73rem;
   color: #fff;
 }
+
+/* See more button CSS */
+.hidden {
+  display: none;
+}

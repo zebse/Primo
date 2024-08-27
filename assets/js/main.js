@@ -197,3 +197,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/*See more Button JS code */
+document.getElementById("see-more-btn").addEventListener("click", function () {
+  const hiddenProducts = document.getElementById("hidden-products");
+  hiddenProducts.classList.toggle("hidden");
+
+  // Change button text
+  if (hiddenProducts.classList.contains("hidden")) {
+    this.textContent = "See More Products";
+  } else {
+    this.textContent = "See Less Products";
+  }
+});
