@@ -83,6 +83,14 @@ section {
 .section-header p {
   margin-bottom: 0;
 }
+/*product specification*/
+.prod-spec h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: -2rem;
+  padding-bottom: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -2112,6 +2120,19 @@ table{
   font-weight: 300;
   max-width: 70%;
 }
+@media(max-width: 768px){
+  .prod-spec h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  caption{
+    font-size: 1rem;
+  }
+  
+  table{
+    min-width: 100%;
+  }
+}
 
 caption{
   font-size: 1.2rem;
@@ -2119,3 +2140,44 @@ caption{
   font-weight: 700;
   color: #31547c;
 }
+
+/*Table animation */
+/* Keyframe animation for fade-in and slide-up effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hide content initially while carousel is displayed */
+.carousel-item {
+  visibility: hidden; /* Hide carousel items */
+}
+
+/* Show active carousel item */
+.carousel-item.active {
+  visibility: visible; /* Show the active carousel item */
+}
+
+/* Apply animation to all TD elements within active carousel items */
+.carousel-item.active table tbody td {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: calc(var(--cell-index) * 0.4s); /* Dynamic delay based on cell index */
+}
+
+/* Set the cell index for each TD element */
+.carousel-item.active table tbody td:nth-child(1) {
+  --cell-index: 1;
+}
+.carousel-item.active table tbody td:nth-child(2) {
+  --cell-index: 2;
+}
+/* ... and so on for all TD elements, adjust if needed */
+
+

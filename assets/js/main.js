@@ -210,3 +210,27 @@ document.getElementById("see-more-btn").addEventListener("click", function () {
     this.textContent = "See Less Products";
   }
 });
+
+//card background
+const cardBgElements = document.querySelectorAll('.card-bg');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const cardBgElement = entry.target;
+      const imageUrl = cardBgElement.style.backgroundImage.replace('url("', '').replace('")', '');
+      cardBgElement.style.backgroundImage = `url(${imageUrl})`;
+      observer.unobserve(cardBgElement);
+    }
+  });
+});
+
+cardBgElements.forEach(element => {
+  observer.observe(element);
+});
+
+
+
+
+
+
+
