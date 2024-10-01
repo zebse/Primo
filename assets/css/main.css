@@ -2155,17 +2155,17 @@ caption{
 }
 
 /* Hide content initially while carousel is displayed */
-.carousel-item {
+.prodSpec {
   visibility: hidden; /* Hide carousel items */
 }
 
 /* Show active carousel item */
-.carousel-item.active {
+.prodSpec.active {
   visibility: visible; /* Show the active carousel item */
 }
 
 /* Apply animation to all TD elements within active carousel items */
-.carousel-item.active table tbody td {
+.prodSpec.active table tbody td {
   opacity: 0; /* Initially hidden */
   animation: fadeInUp 0.5s ease forwards;
   animation-delay: calc(var(--cell-index) * 0.4s); /* Dynamic delay based on cell index */
@@ -2181,3 +2181,71 @@ caption{
 /* ... and so on for all TD elements, adjust if needed */
 
 
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between the buttons */
+}
+
+.carousel-controls button {
+  width: 150px; /* Equal width for both buttons */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel-controls .btn-outline-primary:hover {
+  background-color: #007bff; /* Changes color on hover */
+  color: #fff;
+}
+
+/*Phone ....*/
+.intl-tel-input,
+.iti{
+  width: 100%;
+}
+
+/*WhatsApp*/
+.whats-float {
+  position: fixed;
+  transform:translate(108px,0px);
+  top:25%;
+  right:0;
+  width:150px;
+  overflow: hidden;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 2px 0 0 2px;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  vertical-align: middle
+}
+.whats-float a span {
+  color: white;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  position: absolute;
+  line-height: 16px;
+  font-weight: bolder;
+}
+
+.whats-float i {
+  font-size: 30px;
+  color: white;
+  line-height: 30px;
+  padding: 10px;
+  transform:rotate(0deg);
+  transition: all 0.5s ease-in-out;
+  text-align:center;
+}
+
+.whats-float:hover {
+  color: #FFFFFF;
+  transform:translate(0px,0px);
+  height: 65px;
+}
+
+.whats-float:hover i  {
+  transform:rotate(360deg);
+}

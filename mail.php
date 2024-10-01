@@ -10,6 +10,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = htmlspecialchars($_POST['email']);
     $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
+    //$phone = htmlspecialchars($_POST['phone']);
+    $full_phone = htmlspecialchars($_POST['full_phone']);
+    $company = htmlspecialchars($_POST['company']);
+    $country = htmlspecialchars($_POST['country']);
+
+    // Email content formatting
+    $emailBody = "
+    <h2>Contact Information</h2>
+    <p><strong>Name:</strong> $name</p>
+    <p><strong>Email:</strong> $email</p>
+    <p><strong>Phone:</strong> $full_phone</p>
+    <p><strong>Company:</strong> $company</p>
+    <p><strong>Country:</strong> $country</p>
+    <h3>Message</h3>
+    <p>$message</p>
+    ";
 
     // Create a new PHPMailer instance
     $mail = new PHPMailer(true);
@@ -36,10 +52,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->setFrom($email, $name);
         $mail->addAddress('youngict2014@gmail.com');
 
-        // Email Content
-        $mail->isHTML(true);
+        // Email subject and body
         $mail->Subject = $subject;
-        $mail->Body = $message;
+        $mail->isHTML(true); // Set email format to HTML
+        $mail->Body = $emailBody;
 
         // Send the email
         $mail->send();

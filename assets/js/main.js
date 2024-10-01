@@ -227,10 +227,3 @@ const observer = new IntersectionObserver(entries => {
 cardBgElements.forEach(element => {
   observer.observe(element);
 });
-
-
-
-
-
-
-
