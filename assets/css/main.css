@@ -2108,6 +2108,16 @@ section {
   color: #fff;
 }
 
+.footer-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+}
+
+
+
 /* See more button CSS */
 .hidden {
   display: none;
@@ -2209,16 +2219,17 @@ caption{
 .whats-float {
   position: fixed;
   transform:translate(108px,0px);
-  top:25%;
+  top:60%;
   right:0;
   width:150px;
   overflow: hidden;
   background-color: #25d366;
   color: #FFF;
-  border-radius: 2px 0 0 2px;
+  border-radius: 10px 0 0 2px;
   z-index: 10;
   transition: all 0.5s ease-in-out;
-  vertical-align: middle
+  vertical-align: middle;
+  height: auto;
 }
 .whats-float a span {
   color: white;
@@ -2243,7 +2254,8 @@ caption{
 .whats-float:hover {
   color: #FFFFFF;
   transform:translate(0px,0px);
-  height: 65px;
+  height: 68px;
+
 }
 
 .whats-float:hover i  {
