@@ -29,8 +29,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/int-tel/intlTelInput.css" />
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" />
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -78,10 +84,13 @@
               ></a>
               <ul>
                 <li><a href="all.html">CLEANED</a></li>
+                <li><a href="sort.html">SORTED</a></li>
                 <li><a href="de-hulled.html">DE-HULLED</a></li>
                 <li><a href="roasted.html">ROASTED</a></li>
+                <li><a href="quality.html">QUALITY ASSURANCE</a></li>
               </ul>
             </li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -169,6 +178,30 @@
           </div>
 
           <div class="row gy-5">
+            <!-- Cleaning -->
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-check2-circle"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="#" class="stretched-link">CLEANING</a>
+                </h4>
+                <p class="description">
+                  The control of our products begins at the farm level, ensuring
+                  packaging in clean polypropylene bags and transport in sealed
+                  trucks. Samples are checked for residue, moisture, and purity,
+                  and raw materials are stored in batches. Each batch is moved
+                  to the cleaning line, and the original bags are disposed of
+                  after emptying
+                </p>
+              </div>
+            </div>
+
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -267,461 +300,6 @@
             </div>
             <!-- End Service Item -->
           </div>
-          <!-- Product Quality start -->
-          <div class="container prod-spec" data-aos="fade-up">
-            <h3>Our Products Quality Specifications</h3>
-            <!-- Bootstrap Carousel for Product Specifications -->
-            <div
-              id="productCarousel"
-              class="carousel slide mt-4"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <!-- Sunflower Seeds -->
-                <div class="carousel-item active" id="sunflowerSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Ethiopian origin Sunflower Seeds Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Oil content</td>
-                        <td>34% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>7% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Admixture</td>
-                        <td>1% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Purity</td>
-                        <td>99.5%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Sesame seed -->
-                <div class="carousel-item" id="sesameSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Sesame Seed Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Oil content</td>
-                        <td>Humera 53% MIN, Wollega 56% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Purity</td>
-                        <td>99.9%</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>6 - 7% MAX</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- de-hulled Sesame seed -->
-                <div class="carousel-item" id="dehulledsesameSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Dehulled Sesame Seed Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Oil content</td>
-                        <td>53 - 54% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Purity</td>
-                        <td>99.9%</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>5% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>FFA</td>
-                        <td>1 - 2%</td>
-                      </tr>
-                      <tr>
-                        <td>Un hulled</td>
-                        <td>0.1 - 0.2% MAX</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Soybeans -->
-                <div class="carousel-item" id="soybeanSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Soybeans Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Oil content</td>
-                        <td>19.5% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Protein</td>
-                        <td>35% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>14% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Admixture</td>
-                        <td>0.2% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Impurities</td>
-                        <td>1% MAX</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Niger -->
-                <div class="carousel-item" id="nigerSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Niger Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Oil content</td>
-                        <td>11% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Acidity</td>
-                        <td>Not be excessive</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>8% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Admixture</td>
-                        <td>0.1% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Color</td>
-                        <td>Black</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- White Beans -->
-                <div class="carousel-item" id="whiteBeanSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      White Bean Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Purity</td>
-                        <td>98.5%</td>
-                      </tr>
-                      <tr>
-                        <td>Damaged</td>
-                        <td>
-                          0.75% MAX (cracked seed, shrivelled and insect damage)
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>Not more than 10%</td>
-                      </tr>
-                      <tr>
-                        <td>Admixture</td>
-                        <td>0.75% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Size</td>
-                        <td>Small</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- MugBeans -->
-                <div class="carousel-item" id="greenMugSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Green Mug Beans Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Status</td>
-                        <td>Fully machine cleaned</td>
-                      </tr>
-                      <tr>
-                        <td>Purity</td>
-                        <td>98.5% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>13% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Admixture</td>
-                        <td>1.5%</td>
-                      </tr>
-                      <tr>
-                        <td>Size</td>
-                        <td>2.9 - 3.2 mm</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Red-Kidney -->
-                <div class="carousel-item" id="redKidneySpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Red Kidney Beans Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Damaged</td>
-                        <td>
-                          0.75% MAX (cracked seed, shrivelled and insect damage)
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Purity</td>
-                        <td>98.5% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>Not more than 10%</td>
-                      </tr>
-                      <tr>
-                        <td>Color</td>
-                        <td>Red</td>
-                      </tr>
-                      <tr>
-                        <td>Admixture</td>
-                        <td>0.75% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Size</td>
-                        <td>Natural</td>
-                      </tr>
-                      <tr>
-                        <td>Cooking time</td>
-                        <td>80 min</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Chickpeas -->
-                <div class="carousel-item" id="chickPeasSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Chickpeas Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Fumigated</td>
-                        <td>Freshly</td>
-                      </tr>
-                      <tr>
-                        <td>Dameged</td>
-                        <td>2% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>34% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Foreign matter</td>
-                        <td>1% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Color</td>
-                        <td>Natural color & appearance</td>
-                      </tr>
-                      <tr>
-                        <td>Size</td>
-                        <td>5 - 7 mm</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Flax seed -->
-                <div class="carousel-item" id="flaxSeedSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Flaxseed/Lineseed Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Oil Content</td>
-                        <td>35 - 45% MIN</td>
-                      </tr>
-                      <tr>
-                        <td>Fat</td>
-                        <td>20 - 25%</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>3 - 4% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Fiber</td>
-                        <td>4 - 8%</td>
-                      </tr>
-                      <tr>
-                        <td>Protein</td>
-                        <td>20 - 28% MAX</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Dess0-chickpeas -->
-                <div class="carousel-item" id="dessiSpec">
-                  <table class="table table-bordered table-striped caption-top">
-                    <caption>
-                      Ethiopian Dessi Chickpeas Specifications
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th>Parameter</th>
-                        <th>Value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Status</td>
-                        <td>Machine clean</td>
-                      </tr>
-                      <tr>
-                        <td>Damaged</td>
-                        <td>2% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Moisture</td>
-                        <td>13% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Foreign matter</td>
-                        <td>1.5% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Split</td>
-                        <td>1% MAX</td>
-                      </tr>
-                      <tr>
-                        <td>Black seed</td>
-                        <td>3% MAX</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-              </div>
-
-              <!-- Carousel Controls -->
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#productCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#productCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <!-- Product Quality END -->
         </div>
       </section>
       <!-- End Our Services Section -->
@@ -732,13 +310,13 @@
             <div class="col-lg-12 text-center">
               <h3>Ethiopian Sesame Seeds</h3>
               <p>
-                Ethiopia is the largest and organic producer of White sesame
-                seed in the world with an annual production of 350,000 Metric
-                Tons (2016) and with an average of annual growth of 6%. In
-                Ethiopia, we have 2 types of sesame seeds: Whitish Humera-Gondar
-                sesame seed and Wollega sesame seeds. White Sesame seed grows in
-                the North and North-Western parts of Ethiopia (Humera, Gondar,
-                and Metema) and Western Wollega.
+                PRIMO AGRO INDUSTRIAL TRADING PLC specializes in exporting
+                agricultural products, including Seeds, Beans, Peas, Cereal,and
+                different types of Ethiopian spices, grains and pulses This
+                focused approach allows the company to develop expertise and
+                streamline operations within the global agricultural market. By
+                concentrating on these select commodities, Primo secures steady
+                demand and taps into diverse international markets.
               </p>
               <a class="cta-btn" href="contact.html">Call To Action</a>
             </div>
@@ -747,166 +325,31 @@
       </section>
 
       <!-- End Call To Action Section -->
-
-      <!-- ======= Recent Blog Posts Section ======= -->
-      <section id="recent-posts" class="recent-posts">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Recent Blog Posts</h2>
-          </div>
-
-          <div class="row gy-5">
-            <div
-              class="col-xl-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="post-box">
-                <div class="post-img">
-                  <img src="assets/img/cards-3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="meta">
-                  <span class="post-date">Tue, December 12</span>
-                  <span class="post-author"> / Tadele Warie</span>
-                </div>
-                <h3 class="post-title">
-                  Eum ad dolor et. Autem aut fugiat debitis
-                </h3>
-                <p>
-                  Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel
-                  omnis laudantium. Asperiores eum ipsa est officiis. Modi qui
-                  magni est...
-                </p>
-                <a href="#" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="post-box">
-                <div class="post-img">
-                  <img src="assets/img/cards-4.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="meta">
-                  <span class="post-date">Fri, September 05</span>
-                  <span class="post-author"> / Yonas Alemayehu</span>
-                </div>
-                <h3 class="post-title">
-                  Et repellendus molestiae qui est sed omnis
-                </h3>
-                <p>
-                  Voluptatem nesciunt omnis libero autem tempora enim ut ipsam
-                  id. Odit quia ab eum assumenda. Quisquam omnis doloribus...
-                </p>
-                <a href="#" class="readmore stretched-link"
-                  ><span>Read More</span><i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Recent Blog Posts Section -->
     </main>
     <!-- End #main -->
-
+    <div class="whats-float">
+      <a href="https://wa.me/+251954024287" target="_blank">
+        <i class="bi bi-whatsapp"></i
+        ><span>Hello, <br /><small>I would like to chat with you!</small></span>
+      </a>
+    </div>
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <div class="footer-content">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <span>PRIMO</span>
-              </a>
-              <p>
-                PRIMO AGRO INDUSTRIAL TRADING PLC is an export company
-                specializing in the production and distribution of Seeds, Beans,
-                Peas and Sunflower.
-              </p>
-              <div class="social-links d-flex mt-3">
-                <a
-                  href="https://x.com/TradingPri78350"
-                  class="twitter"
-                  target="_blank"
-                  ><i class="bi bi-twitter-x"></i
-                ></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
+    <div id="footer"></div>
 
-            <div class="col-lg-2 col-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bi bi-dash"></i> <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <i class="bi bi-dash"></i> <a href="about.html">About us</a>
-                </li>
-                <li>
-                  <i class="bi bi-dash"></i>
-                  <a href="services.html">Services</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-2 col-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bi bi-dash"></i> <a>Roasting</a></li>
-                <li><i class="bi bi-dash"></i> <a>DE-Hulling</a></li>
-                <li><i class="bi bi-dash"></i> <a>Sorting</a></li>
-                <li><i class="bi bi-dash"></i> <a>Quality Assurance</a></li>
-              </ul>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-            >
-              <h4>Contact Us</h4>
-              <p>
-                Addis Ababa City Administration<br />
-                Ethiopia <br /><br />
-                <strong>Phone:</strong> +25191 115 0347<br />+
-                <strong>Email:</strong> info@premo.com<br />
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-legal">
-        <div class="container">
-          <div class="copyright">
-            &copy; Copyright
-            <strong><span>PRIMO TRADING PLC</span></strong
-            >. All Rights Reserved
-          </div>
-          <div class="credits">
-            Designed by
-            <a href="https://gateway2ict.com/" target="_blank">Gateway</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer --><!-- End Footer -->
+    <script>
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+    <!-- End Footer -->
+    <!-- WhatsApp Chat Link -->
 
     <a
       href="#"
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
-
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
@@ -916,6 +359,9 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/select2/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/select2/select2.min.js"></script>
+    <script src="assets/vendor/int-tel/intlTelInput.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
